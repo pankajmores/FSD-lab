@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Form Validation</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 40px;
+        }
+        form {
+            background: #fff;
+            padding: 25px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+        button {
+            background: #0a2540;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<form onsubmit="return validateForm()">
+    <h2>Registration Form</h2>
+
+    <input type="text" id="name" placeholder="Name">
+    <div class="error" id="nameError"></div>
+
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="emailError"></div>
+
+    <input type="password" id="password" placeholder="Password">
+    <div class="error" id="passwordError"></div>
+
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <div class="error" id="mobileError"></div>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
